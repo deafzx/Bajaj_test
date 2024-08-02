@@ -1,0 +1,20 @@
+{
+  "name": "bfhl_backend",
+  "version": "1.0.0",
+  "description": "Backend for BFHL application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": "1420.3.1"  
+  }
+}
