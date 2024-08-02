@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "name": "bfhl-project",
+    "builds": [
+      {
+        "src": "bfhl_backend/src/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "bfhl_frontend/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "bfhl_backend/src/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "bfhl_frontend/$1"
+      }
+    ]
+  }
+  
